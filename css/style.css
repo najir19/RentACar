@@ -13,3 +13,49 @@
   /* font variable */
   --primary-fonts: "Righteous", sens-serif;
 }
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* header Part */
+#header_part {
+  height: 85px;
+  padding: 20px 0;
+}
+.header-left {
+  float: left;
+  width: 50%;
+}
+.header-right {
+  width: 50%;
+  float: right;
+}
+.menu ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.header-right {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+.menu ul li a {
+  color: var(--primary);
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.menu ul li a:hover {
+  color: var(--seconday);
+}
+a.signin_btn {
+  text-transform: capitalize !important;
+  font-size: 18px !important;
+  padding: 11px 30px;
+  background: var(--seconday);
+  border-radius: 60px;
+}
+a.signin_btn:hover {
+  color: #fff !important;
+}
