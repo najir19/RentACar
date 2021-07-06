@@ -1,6 +1,23 @@
+/* remove default margin padding */
+*{
+  margin:0;
+  padding:0;
+}
 /* Fonts  */
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Righteous&display=swap");
+
+@font-face {
+    font-family: 'righteousregular';
+    src: url('../webfonts/Righteous-Regular.woff2') format('woff2'),
+         url('../webfonts/Righteous-Regular.woff') format('woff');
+         url('../webfonts/Righteous-Regular.ttf') format('ttf');
+         url('../webfonts/Righteous-Regular.eot') format('eot');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /* variable for color and font family */
 :root {
@@ -11,7 +28,8 @@
   --acent: #3e3e3e;
 
   /* font variable */
-  --primary-fonts: "Righteous", sens-serif;
+  --primary-fonts: "righteousregular", sens-serif;
+  --secondary-fonts: 'Poppins', sans-serif;
 }
 .container {
   width: 1140px;
@@ -20,8 +38,8 @@
 
 /* header Part */
 #header_part {
-  height: 85px;
-  padding: 20px 0;
+    height: 70px;
+    padding-top: 35px;
 }
 .header-left {
   float: left;
@@ -56,6 +74,52 @@ a.signin_btn {
   background: var(--seconday);
   border-radius: 60px;
 }
+a.signin_btn i {
+  padding: 0px 9px;
+}
 a.signin_btn:hover {
-  color: #fff !important;
+  color: var(--text); !important;
+}
+/* banner section */
+div#banner_section {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  color: var(--text);
+  font-family: var(--primary-fonts);
+  padding:7% 0;
+}
+.content-inner h1 {
+    font-size: 60px;
+    padding-bottom: 28px;
+    font-weight: 700;
+}
+.content-inner h2 {
+    font-size: 36px;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+.content-inner h3 {
+    font-size: 30px;
+    color: var(--seconday);
+    padding-bottom: 20px;
+}
+.content-inner p {
+    padding-bottom: 7%;
+    font-size: 20px;
+    line-height: 1.5em;
+    font-family: var(--secondary-fonts);
+}
+a.btn-read {
+    background: #fff;
+    padding: 17px 55px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.4s all ease;
+}
+a.btn-read:hover {
+    background: var(--seconday);
+    border-radius: 30px;
 }
