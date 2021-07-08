@@ -115,14 +115,14 @@ div#banner_section {
     line-height: 1.5em;
     font-family: var(--secondary-fonts);
 }
-a.btn-read {
+.btn-read {
     background: #fff;
     padding: 17px 55px;
     font-size: 20px;
     text-decoration: none;
     transition: 0.4s all ease;
 }
-a.btn-read:hover {
+.btn-read:hover {
     background: var(--seconday);
     border-radius: 30px;
 }
@@ -130,6 +130,7 @@ a.btn-read:hover {
 section#variety_of_cars {
     text-align: center;
     font-family: var(--primary-fonts);
+    overflow: hidden;
 }
 .car {
     float: left;
@@ -141,13 +142,38 @@ section#variety_of_cars {
     padding: 2% 0;
     background: var(--seconday);
     margin-top: 4%;
-    margin-bottom: 7%;
 }
 .cars-name h2 {
     font-weight: 400;
 }
 
 /* search car */
-#search_car_area{
-  
+#search_car_area {
+    background-image: url("../img/bg.jpg");
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+.search-content {
+    float: right;
+    width: 50%;
+    background: #fff;
+    padding: 20px;
+}
+select {
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 3%;
+    border: 1px solid #ddd;
+}
+.search-content h2 {
+    text-align: center;
+    font-family: var(--primary-fonts);
+    padding-bottom: 10%;
+}
+input.btn-read {
+    background: #000;
+    color: #fff;
+    border: 0;
+    margin: 4% 0 4% 33%;
 }
