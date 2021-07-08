@@ -31,6 +31,9 @@
   --primary-fonts: "righteousregular", sens-serif;
   --secondary-fonts: 'Poppins', sans-serif;
 }
+.section_padding{
+  padding: 7% 0;
+}
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -91,12 +94,12 @@ div#banner_section {
   font-family: var(--primary-fonts);
   padding:7% 0;
 }
-.content-inner h1 {
+.title-primary {
     font-size: 60px;
     padding-bottom: 28px;
     font-weight: 700;
 }
-.content-inner h2 {
+.title-secondary {
     font-size: 36px;
     padding-bottom: 15px;
     font-weight: 700;
@@ -106,7 +109,7 @@ div#banner_section {
     color: var(--seconday);
     padding-bottom: 20px;
 }
-.content-inner p {
+.content-inner p, .variety-inner p {
     padding-bottom: 7%;
     font-size: 20px;
     line-height: 1.5em;
@@ -122,4 +125,29 @@ a.btn-read {
 a.btn-read:hover {
     background: var(--seconday);
     border-radius: 30px;
+}
+/* variety of cars */
+section#variety_of_cars {
+    text-align: center;
+    font-family: var(--primary-fonts);
+}
+.car {
+    float: left;
+    width: 33%;
+}
+.cars-name {
+    float: left;
+    width: 33%;
+    padding: 2% 0;
+    background: var(--seconday);
+    margin-top: 4%;
+    margin-bottom: 7%;
+}
+.cars-name h2 {
+    font-weight: 400;
+}
+
+/* search car */
+#search_car_area{
+  
 }
